@@ -1,6 +1,6 @@
 <?php
 
-    class Triangle extends Shape {
+    class Triangle extends Shape implements Area{
 
         private $base;
 

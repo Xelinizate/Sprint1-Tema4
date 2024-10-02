@@ -1,6 +1,6 @@
 <?php
 
-    class Rectangle extends Shape{
+    class Rectangle extends Shape implements Area{
 
         function __construct($ample,$alt){
             parent::__construct($ample,$alt);
