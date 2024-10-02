@@ -8,7 +8,6 @@
         }
 
         function area(){
-            $area;
 
             $area = parent::getAmple() * parent::getAlt();
 
@@ -18,9 +17,9 @@
 
         function toString(){
 
-            return "Les mides del rectangle son " . parent::getAmple . 
-            " de ample amb un alt de " . parent::getAlt . ", la seva area es " . 
-            area();
+            return "Les mides del rectangle son " . parent::getAmple() . 
+            " de ample amb un alt de " . parent::getAlt() . ", la seva area es " . 
+            $this->area();
         }
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-    class Triangle extends Shape {
+    class Area extends Shape{
 
         private $base;
 
@@ -14,7 +14,7 @@
             return $this->base;
         }
 
-        function area(){
+        function triangle(){
 
             $area = ($this->base * parent::getAlt())/2;
 
@@ -22,13 +22,26 @@
 
         }
 
+        function rectangle(){
 
+            $area = parent::getAmple() * parent::getAlt();
+
+            return $area;
+
+        }
+
+        
         function toString(){
 
             return "Calculem l'area d'un triangle amb base " . $this->base . " i un alt de " . 
-            parent::getAlt() . " la seva area es " . $this->area();
+            parent::getAlt() . " la seva area es " . $this->triangle() . "<br>" . 
+            "Les mides del rectangle son " . parent::getAmple() . 
+            " de ample amb un alt de " . parent::getAlt() . ", la seva area es " . 
+            $this->rectangle();;
         }
 
+
     }
+
 
 ?>

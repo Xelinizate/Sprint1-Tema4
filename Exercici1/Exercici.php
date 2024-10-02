@@ -18,9 +18,8 @@
         }
 
         function impost(){
-            $respon;
 
-            if($this->sou += 6000):
+            if($this->sou >= 6000):
                 $respon = "Has de pagar impostos.";
             else:
                 $respon= "No has de pagar impostos.";
@@ -32,17 +31,11 @@
 
         function toString(){
 
-            return "El nom del treballador es " . $this->nom . " el sou es " . 
-                $this->sou . "Ha de pagar impostos?" . impost();
+            return "El nom del treballador es " . $this->nom . ", el sou es " . 
+                $this->sou . "Ha de pagar impostos?" . $this->impost();
         }
 
 
     }
-
-
-
-
-
-
 
 ?>
