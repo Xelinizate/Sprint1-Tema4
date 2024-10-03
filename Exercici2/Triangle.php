@@ -1,5 +1,7 @@
 <?php
 
+    require_once 'Shape.php';
+
     class Triangle extends Shape{
 
         function __construct($ample, $alt){

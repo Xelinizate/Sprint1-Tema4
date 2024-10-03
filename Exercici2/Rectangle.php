@@ -1,5 +1,7 @@
 <?php
 
+    require_once 'Shape.php';
+
     class Rectangle extends Shape{
 
         function __construct($ample,$alt){
