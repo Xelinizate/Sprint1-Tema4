@@ -23,6 +23,8 @@
             $this->alt = $alt;
         }
 
+        function area(){}
+
     }
 
 ?>

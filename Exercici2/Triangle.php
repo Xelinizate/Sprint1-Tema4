@@ -1,31 +1,22 @@
 <?php
 
-    class Triangle extends Shape implements Area{
+    class Triangle extends Shape{
 
-        private $base;
-
-        function __construct($ample, $alt, $base){
+        function __construct($ample, $alt){
             parent::__construct($ample,$alt);
-            $this->base = $base;
 
-        }
-
-        function getBase(){
-            return $this->base;
         }
 
         function area(){
 
-            $area = ($this->base * parent::getAlt())/2;
-
-            return $area;
+            return (parent::getAmple() * parent::getAlt())/2;
 
         }
 
 
         function toString(){
 
-            return "Calculem l'area d'un triangle amb base " . $this->base . " i un alt de " . 
+            return "Calculem l'area d'un triangle amb base " . parent::getAmple() . " i un alt de " . 
             parent::getAlt() . " la seva area es " . $this->area();
         }
 
