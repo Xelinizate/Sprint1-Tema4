@@ -17,9 +17,10 @@
             return $this->sou;
         }
 
+
         function impost(){
 
-            if($this->sou >= 6000):
+            if($this->sou > 6000):
                 $respon = "Has de pagar impostos.";
             else:
                 $respon= "No has de pagar impostos.";
